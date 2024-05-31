@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <link rel="stylesheet" href="./assets/css/loaders.css" />
+    <link rel="stylesheet" href="./assets/css/footer/styles.css" />
+    <title>Choropleth Map:United States Educational Attainment</title>
+  </head>
+  <body>
+    <header>
+      <h1 id="title">Choropleth Map: United States Educational Attainment</h1>
+      <div id="description">
+        <table>
+          <thead>
+            <tr>
+              <th>Periods</th>
+              <th>Info</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="table_periods">2010-2014</td>
+              <td>
+                Percentage of adults age 25 and older with a bachelor's degree
+                or higher
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </header>
+    <main>
+      <div class="wrapper_graph">
+        <div class="container_grafico">
+          <div class="contenedor_loader">
+            <h2>Loading...</h2>
+            <div class="loader"></div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer" translate="no">
+      <div class="footer_contenido">
+        <div translate="no" id="footer_tag">Developed by:</div>
+
+        <div class="logo">
+          <a
+            href="https://linktr.ee/waldohidalgo"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src="./assets/images/logo_waldo.png" alt="logo waldo" />
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <script src="https://unpkg.com/topojson@3"></script>
+    <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+
+    <script type="module" src="./assets/js/script.js"></script>
+  </body>
+</html>
