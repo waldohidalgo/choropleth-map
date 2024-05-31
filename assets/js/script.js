@@ -123,7 +123,7 @@ document.addEventListener("DOMContentLoaded", async () => {
       const xPosition =
         x > 750 ? x + margin.left - 170 - 20 : x + margin.left + 20;
 
-      const yPosition = y > 500 ? y - 170 : y;
+      const yPosition = y > 500 ? y - tooltipElement.offsetHeight : y;
       tooltip
         .style("left", xPosition + "px")
         .style("top", yPosition + margin.top + "px")
