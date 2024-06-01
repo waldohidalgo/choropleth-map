@@ -109,8 +109,8 @@ document.addEventListener("DOMContentLoaded", async () => {
   contenedor
     .selectAll(".county")
     .data(counties.features)
-    .on("mouseover", function (event, d) {
-      const [x, y] = d3.pointer(event);
+    .on("mousemove", function (event, d) {
+      const [x, y] = d3.pointer(event, contenedor.node());
 
       const county = dataMap.get(d.id);
       const percentage = county.bachelorsOrHigher;
